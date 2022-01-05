@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta http-equiv="Content-Type" content=" charset=utf-8" />
+      <title>LargeFrom</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+      <!-- Styles -->
+      <!----------------------- bootstrap css ---------------- -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!----------------------- grid stack css ---------------- -->
+      <link rel="stylesheet" href="css/grid_stack.min.css" />
+
+
+
+      <!-------------------------- this plugin here  ------------------>
+      <link rel="stylesheet" href="js/plugins/jquery_confirm/jquery_confirm.css">
+
+      <link rel="stylesheet" href="js/plugins/colorpicker/bootstrap-colorpicker-plus.min.css">
+
+      <link rel="stylesheet" type="text/css" href="css/dripicon.css" />
+
+
+
+
+      <!--------------------------- custome css  -------------------->
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+      <!---------------------------- google font Poppins ----------------->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+      <!-------------------- end head -------------->
+   </head>
+   <body class="theme-body">
+      <div class="theme-wrapper">
+         <header>
+            <div class="header-left">
+               <div class="logo"><a href="index.html">
+                  <img id="logo_img" src="images/cmitlogo.png" alt="">
+                  </a>
+               </div>
+               <!-- Logo -->
+            </div>
+            <!-- Header Left -->
+            <div class="header-right">
+               <form class="console-search1">
+                  <div data-toggle="dropdown" style="width: 100%;" class=" px-1 d-flex justify-content-between align-items-center">
+                     <strong>Select Option</strong><i class="fas fa-sort-down"></i>
+                  </div>
+                  <div class="dropdown-menu dropdown Option__head dropdown-menu-right">
+                     <a id="project____" class="dropdown-item" href="#">
+                        <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+                       Project
+                     </a>
+                     
+                     <a class="dropdown-item" href="#">
+                        <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                         1. CMIT Solution
+                     </a>
+                     
+                     <a class="dropdown-item" href="#">
+                        <ion-icon ios="ios-aperture" md="md-aperture"></ion-icon>
+                         2. Oranizien
+                     </a>
+                     <div class="text-center mb-2 add__more__btn">
+                        <button>Add More Project</button>
+                     </div>
+                  </div>
+
+
+               </form>
+               <ul class="top-header-btns">
+                  <li class="dropdown">
+                     <a href="#" title="" data-toggle="dropdown"><i class="icon dripicons-bell"></i> <span>9+</span></a>
+                     <div class="dropdown-menu  dropdown-menu-right">
+                        <div class="dropdown-menu-header">
+                           <div class="dmh-inner">
+                              <h4>Notifications</h4>
+                              <span>You have 2 unread notifications</span> 
+                           </div>
+                           <a class="settings-btn" href="#" title="">
+                              <ion-icon ios="ios-aperture" md="md-aperture"></ion-icon>
+                           </a>
+                        </div>
+                        <div class="timeline ">
+                           <div class="timeline-list">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Server pending</div>
+                                 <small class="float-right text-muted">Now</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list  timeline-primary">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Delivery complete</div>
+                                 <small class="float-right text-muted">10min.</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list  timeline-accent">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Delivery processing</div>
+                                 <small class="float-right text-muted">1hr.</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list timeline-success">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Payment recorded</div>
+                                 <small class="float-right text-muted">11:22am</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list timeline-warning">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Order complete</div>
+                                 <small class="float-right text-muted">9:30AM</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list timeline-info">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Product quantities updated</div>
+                                 <small class="float-right text-muted">9:27am</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list timeline-info">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Ticket #627 Closed</div>
+                                 <small class="float-right text-muted">8:02am</small> 
+                              </div>
+                           </div>
+                           <div class="timeline-list timeline-info">
+                              <div class="timeline-info">
+                                 <div class="d-inline-block">Cache cleared</div>
+                                 <small class="float-right text-muted">6:00am</small> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="dropdown-menu-footer">
+                           <a href="#" title="">See All Notifications</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="dropdown">
+                     <a class="login-user" data-toggle="dropdown" href="#" title=""> <img src="images/img1.jpg" alt=""> </a>
+                     <div class="dropdown-menu  dropdown-menu-right">
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+                          <i class="fas fa-user"></i> Profile
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                           <i class="fas fa-cog"></i> Project Setting
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-aperture" md="md-aperture"></ion-icon>
+                           <i class="fas fa-database"></i> Billing and Membership
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+                           <i class="fab fa-buffer"></i> Feedback or Suggest a feature
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+                           <i class="fas fa-user-cog"></i> User access management
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+                           <i class="far fa-question-circle"></i> Help Center
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                           <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+                           <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                     </div>
+                  </li>
+                  
+               </ul>
+            </div>
+            <!-- Header Right -->
+         </header>
+         <!-- Header -->
+         <!-- TABING HEADER -->
+         <div id="tabing-head">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="tab-head-title">
+                        <h1>CMIT Solutions of Tribeca Dashboard > KPI</h1>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-3 tabs">
+                    <ul class="head-menu">
+                    	<li class="active">
+                    		<div class="head-ic-bg icon-f">
+                 <style>
+					li.active img.inactive {
+						display: none;
+					}
+				 </style>   			
+                    		  <a href="">
+                    			  <img src="./images/Artboard – 1.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 12.svg" class="active" alt="icons1">
+							</a>
+                    		</div>
+                    		</a>
+                    		<div class="head-title">
+                    			<p>KPI</p>
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+                    			
+                    			<a href="#">
+								  <img src="./images/Artboard – 3.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 18.svg" class="active" alt="icons1">
+                    		</div>
+                    		</a>
+                			<div class="head-title">
+                    			<p>SEO</p>
+                    		</div>
+
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+	                    		<a href="">
+	                    			<img src="./images/Artboard – 5.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 16.svg" class="active" alt="icons1">
+	                    		</a>
+                    		</div>
+                			<div class="head-title">
+                    			<p>SEM</p>
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+	                    		<a href="">
+	                    			<img src="./images/Artboard – 4.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 17.svg" class="active" alt="icons1">
+	                    		</a>
+                    		</div>
+                			<div class="head-title">
+                    			<p>Social</p>
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+                    			
+                    		<a href="">
+                    			<img src="./images/Artboard – 2.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 13.svg" class="active" alt="icons1"></svg>
+                    		</a>
+                    		</div>
+                			<div class="head-title">
+                    			<p>Mail</p>
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+                    			<a href="">
+                    				<img src="./images/Artboard – 9.svg" class="inactive" alt="icons1">
+								  <img src="./images/hover/Artboard – 10.svg" class="active" alt="icons1">
+                    			</a>
+                    		</div>
+                			<div class="head-title">
+                    			<p>Web</p>
+                    		</div>
+                    	</li>
+                    	<li>
+                    		<div class="head-ic-bg">
+	                    		<a href="">
+	                    			<img src="./images/Artboard – 6.svg" class="inactive last____" alt="icons1">
+								  <img src="./images/hover/Artboard – 15.svg" class="active last____" alt="icons1">
+	                    			</svg>
+	                    		</a>
+                    		</div>
+                			<div class="head-title">
+                    			<p>More</p>
+                    		</div>
+                    	</li>
+                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="theme-content theme-content2">
+		            <aside class="console-sidemenu active" id="sidemenu">
+		               <nav>
+		                  <div class="user logged-in">
+		                     <a class="login-user" href="#" title=""><img src="images/img1.jpg" alt=""></a>
+		                     <div class="user-detail">
+		                        <strong>Joyce Cabardo</strong>
+		                        <i>support@joyce.com</i>
+		                     </div>
+                           <i style="font-size: 20px; margin-top: 10px; cursor: pointer;" class="icon dripicons-align-right"></i> 
+		                  </div>
+		                  <ul class="console-menu">
+		                     <li class="menu-item-has-children">
+		                        <a href="#" title=""> <img src="images/icons/location.png"> &nbsp;&nbsp; <span>Visitors Location</span></a>
+		                     </li>
+		                     <li class="menu-item-has-children">
+		                        <a href="#" title=""> <img src="images/icons/teamwork.png">  <span>Digital Team</span></a>
+		                     </li>
+		                     <li class="menu-item-has-children">
+		                        <a href="#" title=""> <img src="images/icons/weekly.png">  <span>Email</span></a>
+		                     </li>
+                           <li class="menu-item-has-children">
+		                        <a href=""><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
+		                     </li>
+		                  </ul>
+                      
+		               </nav>
+		            </aside>
+	            	<!-- Console Sidemenu -->
+		            <div class="content-area">
+		               <div id="toparea" class="style1">
+                        <div class="console-dashboard-title">
+                           <div>
+                                 <h1 style="font-weight: 600;">My Account</h1>
+                           </div>
+						   </div>
+						</div> 
+                  
+
+                  <div class="grid-stack middle__body body__wpr  gs-area">
+                     <div class="middlw__body__main">
+                        <div class="container-fluid py-3">
+                            <div class="row pb-3">
+                                <div class="col-12 p-0 col-md-12 col-xl-12 col-lg-12 mx-auto">
+                                    <div class="top___billing d-flex justify-content-between align-items-center pb-1 mb-2">
+                                       <h2 class="px-4 py-1">Personal Setting</h2> <a  class="mx-3 my-1" href="#">EDIT</a>
+                                    </div>
+                                </div>
+                               
+                                 <div class="col-12 col-md-9 col-xl-9 col-lg-9 mx-auto">
+                                    <form class="profile__form">
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Username</label><input type="text" placeholder="Enter your Username">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">E-mail</label><input type="email" placeholder="Enter your E-mail">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">City</label><input type="text" placeholder="Enter your City">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Country</label><input type="text" placeholder="Enter your Country">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Company</label><input type="text" placeholder="Enter your Company Name">
+                                       </div>
+                                    </form>
+                                 </div> 
+                                 <div class="col-12 col-md-3 profile__img_edit col-xl-3 col-lg-3 mx-auto">
+                                    <div>
+                                       <img width="200" src="./images/Screenshot_2-removebg-preview.png" alt="profile picture"/>
+                                    </div>
+                                    <div class="upgrade__btn">
+                                       <div class="mb-1 mt-2">
+                                          <a href="#">UPLOAD</a>
+                                       </div>
+                                       <a style="font-style: italic;" href="#">Remove picture</a>
+                                    </div>
+                                 </div> 
+                               </div>
+                              
+                        </div>
+                     </div>
+
+                      <div class="middlw__body__main middlw__body__main2">
+                        <div class="container-fluid py-3">
+                            <div class="row pb-3">
+                                <div class="col-12 p-0 col-md-12 col-xl-12 col-lg-12 mx-auto">
+                                    <div class="top___billing d-flex justify-content-between align-items-center pb-1 mb-2">
+                                       <h2 class="px-4 py-1">Company Setting</h2>
+                                    </div>
+                                </div>
+                               
+                                  <div class="col-12 col-md-9 col-xl-9 col-lg-9 mx-auto">
+                                    <form class="profile__form profile__form12">
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Website Link</label><input type="text" placeholder="Enter your Website Link">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Data sources</label>
+                                          <div class="input__">
+                                             <div class="d-flex align-items-center">
+                                                <span>Google analytics</span> <a><i class="fas fa-plus-circle"></i></a>
+                                             </div>
+                                             <button>Add more Data Source</button>
+                                          </div>
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Services Active</label><input type="text" placeholder="Enter your Password">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Company Address</label><textarea name="" id="" cols="10" rows="3"></textarea>
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Time Zone</label><input type="text" placeholder="Time Zone">
+                                       </div>
+                                       <div class="d-flex justify-content-between align-items-center">
+                                          <label for="">Project Started Data</label>
+                                          <div class="input__">
+                                             <p style="font-size: 15px;color: #6361ec; font-weight: 500;">16th Jan. 2021</p>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div> 
+                                 <div class="col-12 col-md-3 profile__img_edit col-xl-3 col-lg-3 mx-auto">
+                                    <div>
+                                       <img width="200" src="./images/Screenshot_2-removebg-preview.png" alt="profile picture"/>
+                                    </div>
+                                    <div class="upgrade__btn">
+                                       <div class="mb-1 mt-2">
+                                          <a href="#">UPLOAD</a>
+                                       </div>
+                                       <a style="font-style: italic;" href="#">Remove picture</a>
+                                    </div>
+                                 </div>  
+
+
+
+
+                                 <div class="col-12 px-4 py-3 col-md-12 col-lg-12 mx-auto">
+                                    <h2 class="COLORs">COLORS</h2>
+                                    <div class="d-flex align-items-center">
+                                       <div class="row">
+                                          <div class="col-12 col-md-6">
+                                             <ul class="color__ d-flex align-items-center">
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                
+                                             </ul>
+                                          </div>
+                                          <div class="col-12 col-md-6 mt-4">
+                                             <div>
+                                                <a class="last_btna" href="">CHANGE</a>
+                                                <a class="last_btna last_btna2" href="">Restore Default</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                      
+                                       
+                                    </div>
+                                 </div>
+
+                               </div>
+                              
+                        </div>
+                     </div>  
+
+
+
+
+                     
+                  </div>
+                  
+
+
+
+                  
+		            </div>
+         		</div>
+               
+      <!-- Footer -->
+      <section class="foot-main">
+        <div class="container">
+          <footer class="page-footer font-small blue pt-4">
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-5 mt-md-0 mt-3 foot-about">
+                <!-- Content -->
+                  <img src="images/cmit2.png">
+                <p>CMIT Solutions provices responsive, professional IT support
+                    and technology service for you business, performing
+                    proactive maintenance, monitoring, and backups - everything necessary to ensure an efficient, safe,and
+                    reliable IT environmenr.
+                </p>
+
+              </div>
+              <div class="col-md-2"></div>
+              <!-- Grid column -->
+              <hr class="clearfix w-100 d-md-none pb-3">
+              <!-- Grid column -->
+              <div class="col-md-2 mb-md-0 mb-3">
+                <!-- Links -->
+                 <h5 >Resouraces</h5> 
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">QuickTips Blog</a>
+                  </li>
+                  <li>
+                    <a href="#!">In the News</a>
+                  </li>
+                  <li>
+                    <a href="#!">Success</a>
+                  </li>    
+                  <li>
+                    <a href="#!">Stories</a>
+                  </li>
+                </ul>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-md-0 mb-3">
+                <!-- Links -->
+                 <h5>Company</h5> 
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">About</a>
+                  </li>
+                  <li>
+                    <a href="#!">Locations</a>
+                  </li>
+                  <li>
+                    <a href="#!">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#!">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#!">Industries</a>
+                  </li>
+                  <li>
+                    <a href="#!">Clients</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+          <!-- Footer Links -->
+          <!-- Footer Bottom -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-social">
+                  <ul>
+                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-copyright">
+                  <p>© 2022 <a href="#">CMIT Solutions LLC</a> All Rights <a href="#">reserved</a> | <a href="#">Corporate</a> | <a href="#">Privacy</a> | <a href="#">Franchise info</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+        </div>
+      </section>
+      </div>
+
+     
+
+
+
+
+
+      <script src="js/jquerymain_jquerytouch_jquerycookies.js"></script>
+      <script src="js/bootstrap_popper.min.js"></script>
+      <script src="js/jquery_ui.min.js"></script>
+      <script src="js/grid_stack_pack.min.js"></script>
+      
+      <script src="js/script.js"></script>
+      
+
+
+      
+   </body>
+</html>

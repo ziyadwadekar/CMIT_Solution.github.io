@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-------------------------- Bootstrap CSS ----------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!------------------------- font awesome  ------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--------------------------- custom css  ---------------------------->
+    <link rel="stylesheet" href="./css/Create account.css">
+    <title>Create account</title>
+  </head>
+  <body>
+
+    
+
+
+    <!------------------------------- box section start ------------------------------------->
+    <section class="Wraper">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-12 p-0 col-12 col-xl-12 col-lg-12 col-xxl-12 mx-auto">
+
+                    <div class="row">
+
+                        <!---------------- left site  ---------------->
+                        <div class="col-12 left_____W col-md-3 col-lg-3 col-xl-3 col-xxl-3 mx-auto">
+                            
+                            <a class="logo___" href="#">
+                                <img width="180" src="./img/Screenshot_1-removebg-preview.png" alt="logo img" class="img-fluid" >
+                            </a>
+
+                            <div class="left___site">
+                                
+                                <div class="Overly____div my-4">
+                                    
+                                    <div class="left___text">
+                                        <div class="py-5">
+                                        <h3>Explore Console</h3>
+                                        <p>
+                                            Climb leg rub face on everything
+                                            give attitude nap all day for under the bed. 
+                                            Chase mice attack feet but rub face on 
+                                            everything hopped up.
+                                        </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!------------------- righ site  --------------------->
+                        <div class="col-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 mx-auto">
+
+                            <div class="right___site">
+                                
+                                <div class="main__box">
+
+                                    <h5>Provid details about the Company</h5>
+                                    <form action="">
+
+                                        <label for="">Company Name</label><br/>
+                                        <span>
+                                            <i class="far fa-building"></i>
+                                            <input id="Company" type="text" placeholder="Enter your Company Name" /><br/>
+                                        </span>
+                                        
+                                        <label for="">Website Link</label><br/>
+                                        <span>
+
+                                            <i class="fas fa-link"></i>
+                                            <input id="Website" type="text" placeholder="Enter your Website Link" />
+                                        </span>
+
+                                        <label for="">Interesed in</label><br/>
+                                        <span class="select___registration p-0">
+                                            <select name="" id="">
+                                                <option value="Dropdown Low">Dropdown Low</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                                <option value="Web design">Web design</option>
+                                                <option value="SEO">SEO</option>
+                                                <option value="SEM">SEM</option>
+                                                <option value="Social Media">Social Media</option>
+                                                <option value="Email Marketing ">Email Marketing </option>
+                                                <option value="Content Marketing">Content Marketing</option>
+                                                <option value="Inbound Marketing">Inbound Marketing</option>
+                                                <option value="App development">App development</option>
+                                                <option value="Custom Service ">Custom Service </option>
+                                            </select>
+                                        </span>
+
+                                        <label for="">Provid details about the Company</label><br/>
+                                        
+                                        <div class="google___link d-flex justify-content-start align-items-center">
+                                            <a href="#">
+                                                <img style="border-radius: 20px;" width="55" src="./img/Screenshot_4.png" alt="" class="img-fluid"/>
+                                            </a>
+                                            <a>
+                                                <h4>
+                                                    Connect Google Analytics
+                                                </h4>
+                                             </a>
+                                        </div>
+                                        <p class="some__p___text">We can show reports from your googl analytics data</p>
+
+                                        <h6 class="text-center">or</h6>
+
+                                        <div class="check__and___allow">
+                                            <label>
+                                            <input type="checkbox"/> <span>Please check if you do not have Google Analytics Account and you want use to setup Account</span>
+                                            </label>
+                                        </div>
+
+
+
+
+
+                                        <input type="submit" id="submit__btn" class="submit__btn mb-2" value="Create Account" />
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!------------------------------- box section end ------------------------------------->
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script>
+        
+        let Company = document.getElementById('Company');
+        let Website = document.getElementById('Website');
+        let Interesed = document.getElementById('Interesed');
+
+        let submit__btn = document.getElementById('submit__btn');
+        
+        function myfunction(){
+
+            if(Company.value != "" && Website.value != ""){
+                submit__btn.classList.add('active____');
+            }else{
+                submit__btn.classList.remove('active____');
+            }
+        }
+
+        Website.addEventListener('keyup', myfunction);
+        Company.addEventListener('keyup', myfunction);
+
+    </script>
+
+</body>
+</html>

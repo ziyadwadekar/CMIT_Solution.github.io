@@ -1,0 +1,19 @@
+.card-img {
+    width: auto;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.text-center {
+    color: #ffffff;
+    text-align: left;
+    padding-top: 4rem;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1200px){
+    .ceo{
+        margin-left: 20%;
+    }
+}
